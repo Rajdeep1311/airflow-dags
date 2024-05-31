@@ -16,7 +16,7 @@ default_args = {
 def fetch_data_from_s3():
     s3_hook = S3Hook(aws_conn_id='aws_default')
     s3_client = s3_hook.get_conn()
-    obj = s3_client.get_object(Bucket='twitter-airflow-rajdeep', Key='data3.csv')
+    obj = s3_client.get_object(Bucket='your-bucket-name', Key='data3.csv')
     df = pd.read_csv(obj['Body'])
     # Process and store df
 
