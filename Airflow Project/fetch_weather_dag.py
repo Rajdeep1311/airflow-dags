@@ -4,7 +4,7 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 
 # Replace with your actual API key
-API_KEY = '598b37ffdea70e151449b727b8e3eee2'
+API_KEY = 'your-api-key'
 
 # Function to fetch data from the OpenWeatherMap API
 def fetch_weather_data():
